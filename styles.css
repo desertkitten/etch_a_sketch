@@ -4,6 +4,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 #container {
@@ -11,16 +13,21 @@ body {
     flex-wrap: wrap;
     width: 960px;
     height: 960px;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 .grid-item {
-    flex: 1 0 6.25%;
-    /* This will make each div 1/16th of the container width */
-    border: 1px solid #ddd;
     box-sizing: border-box;
+    border: 1px solid #ddd;
+    flex: 0 0 auto;
 }
 
 .grid-item:hover {
-    background-color: green;
+    background-color: #000;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
 }
